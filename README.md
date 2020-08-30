@@ -5,7 +5,7 @@ http://localhost:8080/graphiql
 
 # get allPerson with address
 {
-	getAllPersons{
+   getAllPersons{
     person_id
     name
     addressId
@@ -19,7 +19,7 @@ http://localhost:8080/graphiql
 
 # get allAddress
 {
-	getAllAddress{
+  getAllAddress{
    addres_id
      house_no
     city
@@ -27,10 +27,10 @@ http://localhost:8080/graphiql
    }
 }	
 
-# getPersonById
+# getPersonAndAddressById
 
 {
-	getPersonById(person_id:1){
+  getPersonById(person_id:1){
     person_id
     name
     email
