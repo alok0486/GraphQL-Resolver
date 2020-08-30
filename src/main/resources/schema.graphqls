@@ -1,0 +1,25 @@
+schema {
+    query: Query,
+}
+
+type Person {
+    person_id : ID!,
+    name :String,
+    email :String,
+    dob:String,
+    addressId:Int,
+    address:Address
+}
+
+type Address {
+    addres_id : ID!,
+    house_no : String,
+    city : String,
+    pin	: String
+}
+
+type Query{
+    getPersonById(actorId:Int) : Person
+    getAllPersons:[Person]
+    getAllAddress:[Address]
+}
