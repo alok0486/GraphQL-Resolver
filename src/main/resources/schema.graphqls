@@ -1,25 +1,34 @@
 schema {
     query: Query,
+    #mutation: Mutation
 }
 
 type Person {
-    person_id : ID!,
-    name :String,
-    email :String,
-    dob:String,
-    addressId:Int,
-    address:Address
+    person_id 	: 	ID!,
+    name 		:	String,
+    email 		:	String,
+    dob			:	String,
+    addressId	:	Int,
+    address		:	Address
 }
 
 type Address {
-    addres_id : ID!,
-    house_no : String,
-    city : String,
-    pin	: String
+    addres_id 	: 	ID!,
+    house_no 	: 	String,
+    city 		: 	String,
+    pin			: 	String
 }
 
 type Query{
-    getPersonById(actorId:Int) : Person
-    getAllPersons:[Person]
-    getAllAddress:[Address]
+    getPersonById(person_id:Int) 	: 	Person
+    getAllPersons					:	[Person]
+    getAllAddress					:	[Address]
 }
+ 
+#type Mutation{
+#	createPerson(name:  String!, email:String, dob:String, addressId: ID!)	:	Person
+#	createAddress(city:String, house_no:String, pin:String)	:   Address!
+#	updatePerson(id: ID!, name:String, email:String)	:	Person
+#	deletePerson(id: ID) : Boolean
+#	deleteAddress(id: ID) :	Boolean
+#}

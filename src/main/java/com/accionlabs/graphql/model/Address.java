@@ -11,9 +11,8 @@ import javax.persistence.Table;
 @Entity
 public class Address {
 	public Address() {}
-	public Address(Integer addres_id, String house_no, String city, String pin) {
+	public Address(String house_no, String city, String pin) {
 		super();
-		this.addres_id = addres_id;
 		this.house_no = house_no;
 		this.city = city;
 		this.pin = pin;

@@ -22,8 +22,8 @@ public class PersonService implements GraphQLQueryResolver
     @Autowired
     private AddressRepository addressRepository;
 
-    public Person getPersonById(Integer actorId){
-        return personRepository.findById(actorId).get();
+    public Person getPersonById(Integer person_id){
+        return personRepository.findById(person_id).get();
     }
 
     public List<Person> getAllPersons(){

@@ -13,9 +13,8 @@ public class Person {
 	
 	public Person(){}
 	
-	public Person(Integer person_id, String name, String email, Integer addressId, String dob) {
+	public Person( String name, String email, Integer addressId, String dob) {
 		super();
-		this.person_id = person_id;
 		this.name = name;
 		this.email = email;
 		this.addressId = addressId;
